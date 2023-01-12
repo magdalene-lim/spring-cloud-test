@@ -47,10 +47,13 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-   <groupId>com.google.cloud.tools</groupId>
-   <artifactId>appengine-maven-plugin</artifactId>
-   <version>2.4.4</version>
-</plugin>
+			   <groupId>com.google.cloud.tools</groupId>
+			   <artifactId>appengine-maven-plugin</artifactId>
+			   <version>2.4.4</version>
+			     <configuration>
+				    <deploy.projectId>c372-spring-gcp</deploy.projectId>
+				  </configuration>
+			</plugin>
 		</plugins>
 	</build>
 
